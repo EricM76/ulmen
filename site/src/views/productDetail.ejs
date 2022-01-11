@@ -29,33 +29,22 @@
 
                     <article class="talle">
 
-                        <h4>Elegir talle</h4>
+                        <h4>Talle disponible:</h4>
 
                         <div class="talles">
-                            <div class="item">
-                                <li><a href="#">30</a></li>
-                                <li><a href="#">31</a></li>
-                                <li><a href="#">32</a></li>
-                                <li><a href="#">33</a></li>
+                            <div class="d-flex flex-column" >
+                               <% talles.forEach(talle => { %>
+                                    <li class="<%= talle.id === producto.id_talles && 'bg-secondary' %>"><%= talle.nombre %> </li>
+                               <% }) %>
                             </div>
-                            <div class="item">
-                                <li><a href="#">34</a></li>
-                                <li><a href="#">35</a></li>
-                                <li><a href="#">36</a></li>
-                                <li><a href="#">37</a></li>
-                            </div>
-                            <div class="item">
-                                <li><a href="#">38</a></li>
-                                <li><a href="#">39</a></li>
-                                <li><a href="#">40</a></li>
-                                <li><a href="#">41</a></li>
-                            </div>
+                          
                         </div>
-                
+                    </article>
+
 
                     <article class="botones">
 
-                        <button class="boton-carrito" type="button"> Agregar al carrito </button>
+                        <button onclick="addItem(event, '<%=producto.id%>')" class="boton-carrito" type="button"> Agregar al carrito </button>
 
                         <input type="checkbox" id="heart">
                         <label for="heart" class="boton-corazon"><i class="far fa-heart"></i></label>

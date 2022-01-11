@@ -95,7 +95,51 @@ module.exports = {
                     rol : usuario.id_rol
 
                 }
-                return res.redirect("/")
+
+                    /* carrito */
+                req.session.cart = [];
+
+                db.Orden.findOne({
+                    where: {
+                        id_usuario: req.session.usuarioLogin.id,
+                        estado: 'pendiente'
+                    },
+                    include: [
+                        {
+                            association: 'carritos',
+                            include: [
+                                {
+                                    association: 'producto',
+                                    include: [{ all: true }]
+                                }
+                            ]
+                        }
+                    ],
+                })
+
+                .then(orden => {
+                    if (orden) {
+                        console.log(orden)
+                        orden.carritos.forEach(item => {
+                            let producto = {
+                                id: item.id_producto,
+                                nombre: item.producto.nombre,
+                                imagen: item.producto.imagenes[0].nombre,
+                                precio: item.producto.precio,
+                                cantidad: item.cantidad,
+                                talle: item.producto.talles.nombre,
+                                total: item.producto.precio * item.cantidad,
+                                id_orden: orden.id
+                            }
+                            req.session.cart.push(producto)
+                        })
+                    }
+                    return res.redirect('/')
+
+                })
+                .catch(error => console.log(error))
+                
+
 
             }).catch(error => console.log(error))
         } else {

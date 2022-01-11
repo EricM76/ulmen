@@ -22,15 +22,15 @@ module.exports = (sequelize, DataTypes) => {
         tableName: "imagen",
         timestamps : false
     }
-    const Categoria = sequelize.define(alias, cols, config)
+    const Imagen = sequelize.define(alias, cols, config)
 
-    Categoria.associate = function (models) {
-        Categoria.belongsTo(models.Producto, {
+    Imagen.associate = function (models) {
+        Imagen.belongsTo(models.Producto, {
             foreignKey: "productos_id",
             as: "producto"
         })
     }
   
-    return Categoria
+    return Imagen
 
 }

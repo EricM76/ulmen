@@ -1,532 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./partials/head') %>
+<%- include('./partials/head') %>
 
-<body class="cart">
-    <%- include('./partials/header') %>
+    <body class="cart">
+        <%- include('./partials/header') %>
 
-    <main>
+            <main>
 
-        <section class="titulo">
-            <article>
-                <h1>Mi Carrito</h1>
-                <span>"X" Cantidad de productos</span>
-            </article>
-            <p>Seguir comprando</p>
-        </section>
-
-        <section class="descuento">
-            <h3>CODIGO DE DESCUENTO</h3>
-            <span>Ingresa el codigo de tu cupon, credito o giftcard</span>
-
-            <article class="boton">
-                <label for="codigo"></label>
-                <input type="text" name="codigo" id="codigo">
-            </article>
-
-            <input type="submit" value="Agregar codigo">
-
-
-        </section>
-
-        <section class="principal">
-            <section class="productos">
-                <div class="productos1">
-
-                    <article class="img">
-
-                        <h4>Nombre del Producto</h4>
-
-                        <img src="/images/nikeDunk.jpg" alt="zapatillas" width="100%">
-
-                    </article>
-                    <article class="form">
-
-                        <div class="descripcion">
-                            <article class="talle1">
-                                <h6>Talle</h6>
-                            </article>
-                            <article class="cantidad1">
-                                <h6>Cantidad</h6>
-                            </article>
-                            <article class="total1">
-                                <h6>Subtotal</h6>
-                            </article>
-                        </div>
-
-
-                        <div class="descripcion1">
-
-
-
-
-
-                            <article class="talle">
-
-                                <select name="talle" id="talle">
-                                    <option value="36">Talle 36</option>
-                                    <option value="37">37</option>
-                                    <option value="38">38</option>
-                                    <option value="39">39</option>
-                                    <option value="40">40</option>
-                                    <option value="41">41</option>
-                                    <option value="42">42</option>
-                                    <option value="43">43</option>
-                                    <option value="44">44</option>
-                                    <option value="45">45</option>
-                                </select>
-                            </article>
-
-
-
-                            <article class="cantidad">
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1 unidades</option>
-                                    <option value="2">2 unidades</option>
-                                    <option value="3">3 unidades</option>
-                                    <option value="4">4 unidades</option>
-                                    <option value="5">5 unidades</option>
-                                    <option value="6">6 unidades</option>
-                                </select>
-                            </article>
-
-
-                            <article class="total">
-
-                                <label for="total"></label>
-                                <input type="text" name="total" id="total">
-                            </article>
-                        </div>
-
-
-
-                    </article>
-                    <article class="edicion">
-
-                        <button type="submit">Editar Producto</button>
-
-
-
-                        <article class="trash">
-
-                            <i class="fas fa-trash-alt"></i>
-                        </article>
-                    </article>
-                </div>
-                <div class="productos1">
-
-                    <article class="img">
-
-                        <h4>Nombre del Producto</h4>
-
-                        <img src="/images/airForce.jpg" alt="zapatillas" width="100%">
-
-                    </article>
-                    <article class="form">
-
-                        <div class="descripcion">
-                            <article class="talle1">
-                                <h6>Talle</h6>
-                            </article>
-                            <article class="cantidad1">
-                                <h6>Cantidad</h6>
-                            </article>
-                            <article class="total1">
-                                <h6>Subtotal</h6>
-                            </article>
-                        </div>
-
-
-                        <div class="descripcion1">
-
-
-
-
-
-                            <article class="talle">
-
-                                <select name="talle" id="talle">
-                                    <option value="36">Talle 36</option>
-                                    <option value="37">37</option>
-                                    <option value="38">38</option>
-                                    <option value="39">39</option>
-                                    <option value="40">40</option>
-                                    <option value="41">41</option>
-                                    <option value="42">42</option>
-                                    <option value="43">43</option>
-                                    <option value="44">44</option>
-                                    <option value="45">45</option>
-                                </select>
-                            </article>
-
-
-
-                            <article class="cantidad">
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1 unidades</option>
-                                    <option value="2">2 unidades</option>
-                                    <option value="3">3 unidades</option>
-                                    <option value="4">4 unidades</option>
-                                    <option value="5">5 unidades</option>
-                                    <option value="6">6 unidades</option>
-                                </select>
-                            </article>
-
-
-                            <article class="total">
-
-                                <label for="total"></label>
-                                <input type="text" name="total" id="total">
-                            </article>
-                        </div>
-
-
-
-                    </article>
-                    <article class="edicion">
-
-                        <button type="submit">Editar Producto</button>
-
-
-
-                        <article class="trash">
-
-                            <i class="fas fa-trash-alt"></i>
-                        </article>
-                    </article>
-                </div>
-                <div class="productos1">
-
-                    <article class="img">
-
-                        <h4>Nombre del Producto</h4>
-
-                        <img src="/images/jordanLow.jpg" alt="zapatillas" width="100%">
-
-                    </article>
-                    <article class="form">
-
-                        <div class="descripcion">
-                            <article class="talle1">
-                                <h6>Talle</h6>
-                            </article>
-                            <article class="cantidad1">
-                                <h6>Cantidad</h6>
-                            </article>
-                            <article class="total1">
-                                <h6>Subtotal</h6>
-                            </article>
-                        </div>
-
-
-                        <div class="descripcion1">
-
-
-
-
-
-                            <article class="talle">
-
-                                <select name="talle" id="talle">
-                                    <option value="36">Talle 36</option>
-                                    <option value="37">37</option>
-                                    <option value="38">38</option>
-                                    <option value="39">39</option>
-                                    <option value="40">40</option>
-                                    <option value="41">41</option>
-                                    <option value="42">42</option>
-                                    <option value="43">43</option>
-                                    <option value="44">44</option>
-                                    <option value="45">45</option>
-                                </select>
-                            </article>
-
-
-
-                            <article class="cantidad">
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1 unidades</option>
-                                    <option value="2">2 unidades</option>
-                                    <option value="3">3 unidades</option>
-                                    <option value="4">4 unidades</option>
-                                    <option value="5">5 unidades</option>
-                                    <option value="6">6 unidades</option>
-                                </select>
-                            </article>
-
-
-                            <article class="total">
-
-                                <label for="total"></label>
-                                <input type="text" name="total" id="total">
-                            </article>
-                        </div>
-
-
-
-                    </article>
-                    <article class="edicion">
-
-                        <button type="submit">Editar Producto</button>
-
-
-
-                        <article class="trash">
-
-                            <i class="fas fa-trash-alt"></i>
-                        </article>
-                    </article>
-                </div>
-                <div class="productos1">
-
-                    <article class="img">
-
-                        <h4>Nombre del Producto</h4>
-
-                        <img src="/images/nike97.jpg" alt="zapatillas" width="100%">
-
-                    </article>
-                    <article class="form">
-
-                        <div class="descripcion">
-                            <article class="talle1">
-                                <h6>Talle</h6>
-                            </article>
-                            <article class="cantidad1">
-                                <h6>Cantidad</h6>
-                            </article>
-                            <article class="total1">
-                                <h6>Subtotal</h6>
-                            </article>
-                        </div>
-
-
-                        <div class="descripcion1">
-
-
-
-
-
-                            <article class="talle">
-
-                                <select name="talle" id="talle">
-                                    <option value="36">Talle 36</option>
-                                    <option value="37">37</option>
-                                    <option value="38">38</option>
-                                    <option value="39">39</option>
-                                    <option value="40">40</option>
-                                    <option value="41">41</option>
-                                    <option value="42">42</option>
-                                    <option value="43">43</option>
-                                    <option value="44">44</option>
-                                    <option value="45">45</option>
-                                </select>
-                            </article>
-
-
-
-                            <article class="cantidad">
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1 unidades</option>
-                                    <option value="2">2 unidades</option>
-                                    <option value="3">3 unidades</option>
-                                    <option value="4">4 unidades</option>
-                                    <option value="5">5 unidades</option>
-                                    <option value="6">6 unidades</option>
-                                </select>
-                            </article>
-
-
-                            <article class="total">
-
-                                <label for="total"></label>
-                                <input type="text" name="total" id="total">
-                            </article>
-                        </div>
-
-
-
-                    </article>
-                    <article class="edicion">
-
-                        <button type="submit">Editar Producto</button>
-
-
-
-                        <article class="trash">
-
-                            <i class="fas fa-trash-alt"></i>
-                        </article>
-                    </article>
-                </div>
-                <div class="productos1">
-
-                    <article class="img">
-
-                        <h4>Nombre del Producto</h4>
-
-                        <img src="/images/botinesNike.jpg" alt="zapatillas" width="100%">
-
-                    </article>
-                    <article class="form">
-
-                        <div class="descripcion">
-                            <div class="talle1">
-                                <h6>Talle</h6>
-                            </div>
-                            <div class="cantidad1">
-                                <h6>Cantidad</h6>
-                            </div>
-                            <div class="total1">
-                                <h6>Subtotal</h6>
-                            </div>
-                        </div>
-
-
-                        <div class="descripcion1">
-
-
-
-
-
-                            <article class="talle">
-
-                                <select name="talle" id="talle">
-                                    <option value="36">Talle 36</option>
-                                    <option value="37">37</option>
-                                    <option value="38">38</option>
-                                    <option value="39">39</option>
-                                    <option value="40">40</option>
-                                    <option value="41">41</option>
-                                    <option value="42">42</option>
-                                    <option value="43">43</option>
-                                    <option value="44">44</option>
-                                    <option value="45">45</option>
-                                </select>
-                            </article>
-
-
-
-                            <article class="cantidad">
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1 unidades</option>
-                                    <option value="2">2 unidades</option>
-                                    <option value="3">3 unidades</option>
-                                    <option value="4">4 unidades</option>
-                                    <option value="5">5 unidades</option>
-                                    <option value="6">6 unidades</option>
-                                </select>
-                            </article>
-
-
-                            <article class="total">
-
-                                <label for="total"></label>
-                                <input type="text" name="total" id="total">
-                            </article>
-                        </div>
-
-
-
-                    </article>
-                    <article class="edicion">
-
-                        <button type="submit">Editar Producto</button>
-
-
-
-                        <article class="trash">
-
-                            <i class="fas fa-trash-alt"></i>
-                        </article>
-                    </article>
-                </div>
-
-
-
-            </section>
-
-            <section class="envioSubtotal">
-
-
-                <div class="envio">
-                    <h3>Costo de Envio</h3>
-                    <h5>Ingresa tu codigo postal, para poder calcular el costo de envio.</h5>
+                <section class="titulo">
                     <article>
-                        <label for="codigoPostal"></label>
-                        <input class="code" type="text" name="codigoPostal" id="codigoPostal">
-                        <div>
-                            <input type="submit" value="Agregar Codigo">
-                        </div>
+                        <h1>Mi Carrito</h1>
+                        <span id="cantidad-productos"></span><span> productos</span>
+                    </article>
+                    <p>Seguir comprando</p>
+                </section>
 
+                <section class="descuento">
+                    <h3>CODIGO DE DESCUENTO</h3>
+                    <span>Ingresa el codigo de tu cupon, credito o giftcard</span>
+
+                    <article class="boton">
+                        <label for="codigo"></label>
+                        <input type="text" name="codigo" id="codigo">
                     </article>
 
+                    <input type="submit" value="Agregar codigo">
 
-                </div>
-                <div class="totalCompra">
-                    <h4>Total Compra </h4>
-                    <form action="total" method="POST">
-                        <div>
-                            <label for="subtotal">Subtotal</label>
-                            <input type="text" name="subtotal" id="subtotal">
+
+                </section>
+
+                <section class="principal">
+                    <section class="productos" id="box-productos">
+
+
+               
+
+
+                    </section>
+
+                    <section class="envioSubtotal">
+
+
+                        <div class="envio">
+                            <h3>Costo de Envio</h3>
+                            <h5>Ingresa tu codigo postal, para poder calcular el costo de envio.</h5>
+                            <article>
+                                <label for="codigoPostal"></label>
+                                <input class="code" type="text" name="codigoPostal" id="codigoPostal">
+                                <div>
+                                    <input type="submit" value="Agregar Codigo">
+                                </div>
+
+                            </article>
+
+
                         </div>
-                        <div>
-                            <label for="envio">Envio</label>
-                            <input type="text" name="envio" id="envio">
-                        </div>
-                        <div>
-                            <label for="descuento">Descuento</label>
-                            <input type="text" name="descuento" id="descuento">
-                        </div>
-                        <div>
-                            <label for="total">Total</label>
-                            <input type="text" name="total" id="total">
-                        </div>
-                        <div>
-                            <button type="submit">Comprar</button>
+                        <div class="totalCompra">
+                            <h4>Total Compra </h4>
+                            <form action="total" method="POST">
+                                <div>
+                                    <label for="subtotal">Subtotal</label>
+                                    <input type="text" name="subtotal" id="subtotal">
+                                </div>
+                                <div>
+                                    <label for="envio">Envio</label>
+                                    <input type="text" name="envio" id="envio">
+                                </div>
+                                <div>
+                                    <label for="descuento">Descuento</label>
+                                    <input type="text" name="descuento" id="descuento">
+                                </div>
+                                <div>
+                                    <label for="total">Total</label>
+                                    <input type="text" name="total" id="total">
+                                </div>
+                                <div>
+                                    <button type="submit">Comprar</button>
 
-                        </div>
-
-
-                    </form>
-
-                   
-            </section>
-            <section class="tablet">
-                        
-                
-
-                    <button type="submit" value="comprar">Descuento</button>
-                    <button type="submit" value="comprar">Codigo Postal</button>
-                    <button type="submit" value="comprar">comprar</button>
-                
-                    
-                
+                                </div>
 
 
-            </section>
-        </section>
-
-        <section class="mediosDePago">
-
-            <div>
-                <h2>Medios de pago</h2>
-                <h4>Podrás abonar con Todos los Medios de Pagos habilitados y las principales tarjetas de crédito y
-                    débito</h4>
-
-            </div>
-            <div class="imgPagos">
-                <img src="/images/mediosdepago.png" alt="Medios de Pago">
+                            </form>
 
 
-            </div>
-        </section>
+                    </section>
+                    <section class="tablet">
 
 
-    </main>
 
-    <%- include('./partials/footer') %>
-</body>
+                        <button type="submit" value="comprar">Descuento</button>
+                        <button type="submit" value="comprar">Codigo Postal</button>
+                        <button type="submit" value="comprar">comprar</button>
+
+
+
+
+
+                    </section>
+                </section>
+
+                <section class="mediosDePago">
+
+                    <div>
+                        <h2>Medios de pago</h2>
+                        <h4>Podrás abonar con Todos los Medios de Pagos habilitados y las principales tarjetas de
+                            crédito y
+                            débito</h4>
+
+                    </div>
+                    <div class="imgPagos">
+                        <img src="/images/mediosdepago.png" alt="Medios de Pago">
+
+
+                    </div>
+                </section>
+
+
+            </main>
+
+            <%- include('./partials/footer') %>
+    </body>
 
 </html>

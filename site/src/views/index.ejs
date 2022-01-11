@@ -36,7 +36,8 @@
                         <h3><%= producto.nombre %> </h3>
                         <span>$ <%= producto.precio %></span>
                     </div>
-                    <i class="fas fa-cart-plus icon"></i>
+                    <a href="" onclick="addItem(event,'<%=producto.id%>')"><i class="fas fa-cart-plus icon"></i>
+                    </a>
                 </div>
                 <% }) %>
             </div>
